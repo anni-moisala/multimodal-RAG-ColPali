@@ -91,7 +91,7 @@ def main():
         dataset,
         batch_size=4,
         shuffle=False,
-        sampler=sampler,
+        sampler=sampler, 
         num_workers=7,
         pin_memory=True,
         collate_fn=lambda x: processor.process_images(x),

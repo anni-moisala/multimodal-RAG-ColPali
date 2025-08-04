@@ -1,12 +1,12 @@
 #!/bin/bash                                                                                                                  
 #SBATCH --account=project_462000824                                                                                          
-#SBATCH --output=./log/out_%j                                                                                     
-#SBATCH --error=./log/err_%j                                                                                      
+#SBATCH --output=./log/out_index_ddp_%j                                                                                     
+#SBATCH --error=./log/err_index_ddp_%j                                                                                      
 #SBATCH --partition=dev-g                                                                                                    
 #SBATCH --ntasks-per-node=1                                                                                                  
 #SBATCH --cpus-per-task=7                                                                                                    
 #SBATCH --gpus-per-node=2                                                                                                   
-#SBATCH --mem=120G                                                                                                    
+#SBATCH --mem=240G                                                                                                    
 #SBATCH --time=00:30:00
 
 export OMP_NUM_THREADS=1  # Set the number of OpenMP threads
