@@ -105,7 +105,7 @@ def main():
         with torch.no_grad():
             batch_doc = {k: v.to(model.device) for k, v in batch_doc.items()}
             embeddings_doc = model(**batch_doc)
-            local_embeddings.extend(list(torch.unbind(embeddings_doc.to("cpu"))))
+        local_embeddings.extend(list(torch.unbind(embeddings_doc.to("cpu"))))
 
     torch.cuda.synchronize()                                             
     end_time = time.time()                                                       
