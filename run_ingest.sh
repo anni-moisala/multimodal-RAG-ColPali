@@ -1,7 +1,7 @@
 #!/bin/bash                                                                                                                  
 #SBATCH --account=project_462000824                                                                                          
-#SBATCH --output=./log/out_index_ddp_%j                                                                                     
-#SBATCH --error=./log/err_index_ddp_%j                                                                                      
+#SBATCH --output=./log/out_%j                                                                                     
+#SBATCH --error=./log/err_%j                                                                                      
 #SBATCH --partition=dev-g                                                                                                    
 #SBATCH --ntasks-per-node=1                                                                                                  
 #SBATCH --cpus-per-task=7                                                                                                    
